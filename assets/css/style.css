@@ -75,8 +75,8 @@ header figure h4{
 }
 
 .boxContent img{
-    height: 20%;
-    width: 120px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     border: solid 2px red;
     background-color: #d1d1d1; 
@@ -101,9 +101,10 @@ header figure h4{
 }
 .list li a{
     height: 100%;
-    width: 70%;
+    width: 50%;
     display: flex;
     align-items: center;
+    justify-content:left;
     padding: 5%;
     color: #fff;
     background-color:var(--impotant-color);
@@ -117,14 +118,12 @@ header figure h4{
 }
 .list li a i{
     display: flex;
-    justify-content: center;
     font-size: 2em;
    
 }
 
 .list li a h4{
     display: flex;
-    justify-content: center;
     padding: 1px;
     text-transform: capitalize;
 }
@@ -146,12 +145,12 @@ header figure h4{
     }
 
     .boxContent img{
-        height: 18%;
+        height:100px ;
         width: 100px;
     }
 
     .list li a{ 
-        width: 150px;
+        width: 200px;
         font-size: .8em;
     }
     
@@ -161,5 +160,6 @@ header figure h4{
     .list li a{ 
         width: 150px;
         font-size: .6em;
+        white-space:nowrap ;
     }
 }
