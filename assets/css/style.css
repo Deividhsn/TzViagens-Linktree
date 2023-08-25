@@ -1,0 +1,131 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* RESET PAGE */
+ *{
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none; 
+    font-family: 'Noto Sans', sans-serif; 
+    font-weight: 600;  
+} 
+/* ROOT COLORS */
+:root{
+    --primary-bck-color:#f4f4f4;
+    --secundary-bck-color:#d1d1d1;
+    --primary-font-color:#151515;
+    --secondary-font-color:#2e2d2d;
+    --impotant-color:#8b3c2b;
+}
+
+/*BODY*/
+body{
+    background-color: var(--secondary-font-color);
+    height: 100vh;
+    max-height: 100vh;
+}
+/*HEADER*/
+header{
+    /* background-color: #E54260; */
+    width: 100%;
+    height: 80px;
+}
+
+header figure{
+    /* background-color: aquamarine; */
+    height: 100%;
+    width: 20%;
+    margin-left: 3%;
+}
+
+header figure img{
+    height: 50%;
+    max-height: 50%;    
+}
+header figure h4{
+    margin-top: -2%;
+    text-transform: capitalize;
+    color: var(--primary-font-color);
+}
+
+
+/*BIG-BOX*/
+.bigBox{
+    height: 90vh;
+    width: 90%;
+    margin-inline:auto;
+    display: flex;
+    flex-direction: column;
+}
+/* BOX-CONTENT */
+.boxContent{
+    height: 90vh;
+    width: 50%;
+    margin-inline:auto;
+    background-image: url(/assets/img/backBody.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 1px var(--impotant-color);
+    margin-bottom: 2%;
+}
+
+.boxContent img{
+    height: 20%;
+    width: 120px;
+    border-radius: 50%;
+    border: solid 2px red;
+    background-color: #d1d1d1; 
+    margin-top: 10%;
+}
+
+/*BOX-LIST*/
+.boxList{
+    width: 50%;   
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.list li{
+    height: 50px;
+    width: 100%;
+   
+}
+.list li a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5%;
+    color: #fff;
+    background-color:var(--impotant-color);
+    border-radius: 10px;
+    gap: 60px;
+    
+}
+
+.list li a:hover{
+    background-color: #ff0000;
+}
+.list li a i{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+   
+}
+
+.list li a h4{
+    display: flex;
+    justify-content: center;
+    padding: 1px;
+    text-transform: capitalize;
+}
+
+
+
+/*FOOTER*/
