@@ -28,63 +28,56 @@ body{
 
 /*BIG-BOX*/
 .bigBox{
-    height: 100vh;
+
+    width: 100%;
+    max-width: 420px;
+    height: max-content;
     margin-top: 1%;
     margin-inline: auto;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+    padding: 0 20px;
 
 }
 /* BOX-CONTENT */
-.boxContent{
-    height: ;
-    width: 50%;
-    min-width: 90%;
-    margin-inline:auto;
+.logo{
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    border-radius: 10px;
-    margin-bottom: 2%;
-   
+    color: #fff;
 }
 
-.boxContent img{
+.logo img{
     height: 150px;
     width: 150px;
     background-color: #d1d1d1; 
 }
 
-.boxContent .description{
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    gap: 5px;
-}
-
-.boxContent .description h4{
+.logo h4{
     text-transform: uppercase;
-    font-size: 1.1em;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
 }
-
-.boxContent .description p{
+.logo p{
     text-align: center;
     text-transform: capitalize;
     font-size: .9em;
 }
 
 
-/*BOX-LIST*/
-.boxList{
-    width: 50%;   
-}
+/*BOX-LIST*/   
+
 .list{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    margin-top: 40px;
+    gap: 10px;
 }
 .list li{
     height: 50px;
@@ -96,15 +89,16 @@ body{
 }
 .list li a{
     height: 100%;
-    width: 50%;
+    width: 100%;
     display: flex;
     align-items: center;  
-    justify-content:left;
+    justify-content:center;
     padding: 5%;
     color: #fff;
     border: solid 2px #fff;
     border-radius: 10px;
     gap: 10%;
+    position: relative;
     
 }
 
@@ -114,6 +108,8 @@ body{
 .list li a i{
     display: flex;
     font-size: 2em;
+    position: absolute;
+    left: 10px;
    
 }
 
@@ -121,40 +117,4 @@ body{
     display: flex;
     padding: 1px;
     text-transform: capitalize;
-}
-
-
-
-/*FOOTER*/
-
-@media(max-width:960px){
-
-    header figure img{
-        height: 30%;
-        max-height: 30%;    
-    }
-
-    header figure h4{
-        font-size: .9em;
-        white-space:nowrap ;
-    }
-
-    .boxContent img{
-        height:100px ;
-        width: 100px;
-    }
-
-    .list li a{ 
-        width: 200px;
-        font-size: .8em;
-    }
-    
-}
-
-@media(max-width:680px){
-    .list li a{ 
-        width: 150px;
-        font-size: .6em;
-        white-space:nowrap ;
-    }
 }
