@@ -118,3 +118,12 @@ body{
     padding: 1px;
     text-transform: capitalize;
 }
+footer{
+    margin-top: 20px;
+    color: #f4f4f4;
+}
+
+footer p b{
+    font-weight: 700;
+    color: #151515;
+}
